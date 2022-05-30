@@ -122,8 +122,8 @@ class Contact_Form {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-contact-form-public.php';
 
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'shortcodes/contact-form.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'shortcodes/contact-form-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-contact-form-shortcode.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-contact-form-admin.php';
 
 		$this->loader = new Contact_Form_Loader();
 
