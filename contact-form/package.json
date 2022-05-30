@@ -1,0 +1,20 @@
+{
+  "name": "contact-form",
+  "version": "1.0.0",
+  "description": "WordPress plugin providing shortcodes to display enquiry form and submitted results",
+  "scripts": {
+	  "uglify:js": "uglifyjs src/js/*.js -m -o public/js/main.js",
+    "build:scss": "node-sass src/scss/main.scss -o public/css",
+    "watch:scss": "onchange \"src/scss\" -- run-s build:scss",
+    "start:bs": "browser-sync start --proxy 'http://localhost:8080' --files 'public/css/*.css', 'public/js/*.js'",
+    "dev": "concurrently \"npm:start:bs\" \"npm:watch:scss\""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "concurrently": "^6.4.0",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+	  "uglify-js": "^3.14.4"
+  }
+}

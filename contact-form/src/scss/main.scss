@@ -1,0 +1,104 @@
+.contact-form {
+    position: relative;
+    padding: 10px;
+
+    @media (max-width: 670px) {
+        width: unset !important;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+
+        & > * {
+            width: 50% !important;
+            margin-bottom: 5px !important;
+        }
+
+        & > *:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 670px) {
+            flex-wrap: wrap;
+
+            & > * {
+                width: 100% !important;
+            }
+
+            & > *:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__radio-container {
+        display: flex;
+        align-items: center;
+
+        & > * {
+            flex: 1;
+        }
+
+        @media (max-width: 670px) {
+            padding: 10px 0;
+        }
+    }
+
+    &__radio-item-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        input {
+            margin: 0;
+        }
+
+        label {
+            margin: 0 0 0 20px;
+        }
+    }
+
+    &__upload-btn {
+        margin-bottom: 5px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    &__last-row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__status {
+        margin-left: 10px;
+    }
+
+    &__status > * {
+        display: none;
+    }
+
+    &__status-invalid {
+        color: red;
+    }
+
+    &--processing &__status-processing {
+        display: block;
+    }
+
+    &--success &__status-success {
+        display: block;
+    }
+
+    &--failure &__status-failure {
+        display: block;
+    }
+
+    &--invalid &__status-invalid {
+        display: block;
+    }
+}
