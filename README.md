@@ -1,6 +1,6 @@
 # Contact Form
 
-This WordPress plugin provides the [contact_form] shortcode which renders a simple contact form on posts and pages. Also the plugin adds an admin page where the form submission records can be viewed in a table.
+This WordPress plugin provides the [contact_form] shortcode which renders a simple contact form on posts and pages. Also, the plugin adds an admin page where the form submission records can be viewed in a table.
 
 ## Implementation details
 
