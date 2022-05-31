@@ -8,6 +8,7 @@ This WordPress plugin provides the [contact_form] shortcode which renders a simp
 * All output is escaped and translation ready, all input is sanitized
 * Form submission is handled with AJAX, WP nonce is used to verify form submission origin
 * Uploaded files are stored in `/upload` directory on the server, only file names are stored in database
+* Both the form and admin page have responsive design
 
 ## Styles and scripts build instructions
 
