@@ -36,21 +36,21 @@ class Contact_Form_Shortcode
 		<div class="contact-form">
 			<form class="contact-form__form js-contact-form" action="/admin-ajax.php" method="POST">
 				<div class="contact-form__row">
-					<input name="name" type="text" placeholder="<?php esc_html_e( 'Name', 'enquiry' ); ?>" class="contact-form__first-name" 
+					<input name="name" type="text" placeholder="<?php esc_html_e( 'Name', 'contact-form' ); ?>" class="contact-form__first-name" 
 						value="" >
-					<input name="email" type="text" placeholder="<?php esc_html_e( 'Email', 'enquiry' ); ?>" class="contact-form__email"
+					<input name="email" type="text" placeholder="<?php esc_html_e( 'Email', 'contact-form' ); ?>" class="contact-form__email"
 						value="" >
 				</div>
 				<div class="contact-form__row">
-					<input name="date" type="text" placeholder="<?php esc_html_e( 'Date', 'enquiry' ); ?>" class="contact-form__date">
+					<input name="date" type="text" placeholder="<?php esc_html_e( 'Date', 'contact-form' ); ?>" class="contact-form__date">
 					<div class="contact-form__radio-container">
 						<div class="contact-form__radio-item-container">
 							<input type="radio" id="option_1" name="multiple_choice" value="option_1" checked="checked">
-							<label for="option_1">Option 1</label>
+							<label for="option_1"><?php esc_html_e( 'Option 1', 'contact-form' ); ?></label>
 						</div>
 						<div class="contact-form__radio-item-container">
 							<input type="radio" id="option_2" name="multiple_choice" value="option_2">
-							<label for="option_2">Option 2</label>
+							<label for="option_2"><?php esc_html_e( 'Option 2', 'contact-form' ); ?></label>
 						</div>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ class Contact_Form_Shortcode
 					<input class="js-upload-btn-real" type="file" name="file" onchange="handleFileSelect(this)" />
 				</div>
 				<div class="contact-form__upload-btn-wrapper">
-					<button class="contact-form__upload-btn js-upload-btn">Upload File</button>
+					<button class="contact-form__upload-btn js-upload-btn"><?php esc_html_e( 'Upload File', 'contact-form' ); ?></button>
 					<span class="contact-form__file-name js-file-name"></span>
 				</div>
 				<div class="contact-form__last-row">
