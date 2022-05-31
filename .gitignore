@@ -1,2 +1,4 @@
 node_modules
 .vscode
+contact-form/public/css
+contact-form/public/js
